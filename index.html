@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#030712">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Visione AI">
+    <meta name="description" content="Analisi fotografica, critica artistica e curatela professionale potenziata dall'Intelligenza Artificiale.">
+    
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="https://cdn.lucide.dev/camera.svg">
+    
+    <title>Visione AI - Critico Fotografico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="/index.tsx"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            overscroll-behavior-y: none; /* Prevents pull-to-refresh on mobile */
+        }
+        .markdown-body h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #e5e7eb; }
+        .markdown-body strong { color: #f3f4f6; font-weight: 600; }
+        .markdown-body ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; color: #d1d5db; }
+        .markdown-body li { margin-bottom: 0.25rem; }
+        .markdown-body p { margin-bottom: 1rem; line-height: 1.6; color: #d1d5db; }
+        
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .custom-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .custom-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen selection:bg-indigo-500 selection:text-white">
+    <div id="root"></div>
+</body>
+</html>
